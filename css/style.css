@@ -29,6 +29,12 @@ header{
 	width: 100%;
 }
 
+.sticky{
+	position: fixed;
+	background-color: #fff;
+}
+
+
 .btn-nav{
 	background-color: var(--menu-hover);
 	color: #fff !important;
@@ -275,10 +281,111 @@ header{
 
 
 
+.accordion-item{
+	margin-top: 10px;
+	border: 0;
+	padding: 15px;
+}
+.accordion-item:hover{
+	box-shadow: 0px 0px 5px 3px #eee;
+}
+
+.accordion-item button{
+	color: var(--color-verde);
+	font-size: 18px;
+	letter-spacing: 1px;
+}
+.accordion-button:not(.collapsed){
+	color: var(--color-verde);
+	background-color: transparent;
+	box-shadow: none;
+}
+.accordion-button:focus{
+	border: 0;
+	box-shadow: none;
+}
+
+
+.form .optionalParent{
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.form input{
+	padding: 15px;
+}
+.form .btn-verde{
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+
+footer{
+	padding: 40px 0;
+	text-align: center;
+}
 
 
 
+.app-carousel .owl-dots {
+    text-align: center;
+}
+.app-carousel .owl-dot {
+    height: 11px;
+    width: 11px;
+    border: 1px solid var(--color-verde) !important;
+    border-radius: 50%;
+    margin: 35px 6px;
+}
+.app-carousel .owl-dot.active {
+    background-color: var(--color-verde);
+}
 
+
+
+/*COMPUTADORA (col-lg)*/
+@media (min-width:1200px){
+	
+
+}
+
+/*TABLET (col-sm)*/
+@media (min-width:600px) and (max-width:1199px){
+	
+
+}
+
+/*CELULAR (col)*/
+@media (max-width:599px){
+	
+	header{
+		position: relative;
+	}
+	#hero h1{
+		font-size: 34px;
+	}	
+	#hero{
+		height: 55vh;
+	}
+	#hero .btn{
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	#hero .btn.ms-3{
+		margin-left: 0 !important;
+	}
+	
+	
+	#schedule #pills-tab{
+		display: inherit;
+	}
+	#schedule #pills-tab .nav-link{
+		width: 100%;
+	}
+	
+}
 
 
 
